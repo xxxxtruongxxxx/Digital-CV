@@ -1,0 +1,221 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+
+
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+    padding: 40px
+}
+
+/* h2 */
+.section-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1.5px solid black;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.avatar{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 113px;
+    height: 113px;
+    margin-top: 40px;
+}
+
+/* h1 */
+#info .section-title{
+    color: #0e2452;
+    border-bottom: none;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+/* thông tin cá nhân */
+#info .section-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+#info .section-content .year{
+    min-width: 15%;
+    font-weight: bold;
+}
+
+/* mục tiêu nghề nghiệp */
+#target .section-content{
+    margin-top: 25px;
+    line-height: 20px;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+/* học vấn */
+#education .section-content {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-left: 60px;
+    line-height: 1.5;
+}
+#education .section-content .year{
+    min-width: 30%;
+}
+
+
+/* kinh nghiệm làm việc */
+#experience .section-content{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-left: 60px;
+    line-height: 1.5;
+}
+#experience .section-content .year{
+    min-width: 30%;
+}
+
+
+/* Hoạt động */
+#activity .section-content{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+#activity .section-content .year{
+    min-width: 32%;
+}
+
+/* kỹ năng */
+#skill .section-content{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-left: 40px;
+}
+#skill .section-content .language{
+    min-width: 32%;
+    font-weight: bold;
+}
+
+/* Chứng chỉ - Giải thưởng */
+#certificate .section-content{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-left: 40px;
+}
+#certificate .section-content .year{
+    min-width: 32%;
+}
+
+/* sở thích */
+#hobby .section-content{
+    margin-left: 20px;
+}
+
+/* dự án */
+#project .section-content{
+    margin-left: 40px;
+}
+#project .section-content p strong{
+    font-size: 1.5em;
+}
+#project ul li{
+    margin-left: 20px;
+}
+
+/* liên hệ */
+#contact .section-content ol li a{
+    text-decoration: none;
+    color: blue;
+}
+#contact .section-content{
+    margin-left: 20px;
+}
+
+/* nâng cao */
+/* học vấn */
+.cv-document .cv-page #education .section-content .year{
+    position: relative;
+}
+.cv-document .cv-page #education .section-content .year:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left:-20px;
+    width: 6px;
+    height: 10px;
+    background: black;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.cv-document .cv-page #education .section-content .year:before{
+content: "";
+position: absolute;
+top: 17px;
+left: -18px;
+width: 1px;
+height: 100%;
+background: gray;
+}
+
+/* kinh nghiệm làm việc */
+.cv-document .cv-page #experience .section-content .year{
+    position: relative;
+}
+.cv-document .cv-page #experience .section-content .year:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left:-20px;
+    width: 6px;
+    height: 10px;
+    background: black;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.cv-document .cv-page #experience .section-content .year:before{
+content: "";
+position: absolute;
+top: 17px;
+left: -18px;
+width: 1px;
+height: 100%;
+background: gray;
+}
